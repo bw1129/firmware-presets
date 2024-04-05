@@ -1,0 +1,64 @@
+#$ TITLE: PIDtoolbox Official 5 inch Freestyle Tune
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: TUNE
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: PIDtoolbox, PTB, PTBLABS, 5"
+#$ AUTHOR: The PIDtoolbox Guy
+
+#$ DESCRIPTION: PIDtoolbox Official Generic 5 inch Freestyle Tune 
+#$ DESCRIPTION: ESC must be bi-directional Dshot ready
+#$ WARNING: For use only with a 5" freestyle build, 1700-1950kv (6s) or 2400-2700kv (4s)
+#$ DISCUSSION: https://discord.gg/XdXh5AVU
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
+
+set dshot_bidir = ON
+
+# -- Filter Settings --
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 500
+set dyn_notch_q = 400
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 600
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set rpm_filter_harmonics = 3
+set rpm_filter_q = 750
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 0
+set dterm_lpf1_type = PT2
+set dterm_lpf1_static_hz = 120
+set dterm_lpf2_static_hz = 0
+
+# -- PID Settings --
+set p_pitch = 61
+set i_pitch = 109
+set d_pitch = 41
+set f_pitch = 162
+set p_roll = 58
+set i_roll = 104
+set d_roll = 39
+set f_roll = 156
+set p_yaw = 58
+set i_yaw = 104
+set f_yaw = 156
+set d_min_roll = 39
+set d_min_pitch = 41
+set feedforward_smooth_factor = 18
+set feedforward_boost = 5
+set simplified_master_multiplier = 130
+set simplified_dmax_gain = 0
+set simplified_pitch_d_gain = 95
+set simplified_dterm_filter_multiplier = 160
+set tpa_rate = 75
+set tpa_breakpoint = 1300
+
+#$ OPTION_GROUP BEGIN: Select Dshot 300 or 600
+    #$ OPTION BEGIN (UNCHECKED): Dshot 300
+        set motor_pwm_protocol = DSHOT300
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Dshot 600
+        set motor_pwm_protocol = DSHOT600
+    #$ OPTION END
+#$ OPTION_GROUP END
