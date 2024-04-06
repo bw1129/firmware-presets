@@ -5895,8 +5895,8 @@
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/4.5/tune/PIDtoolbox/PIDtoolbox_5inch_freestyle.txt",
-      "hash": "3eb93dd7195ef10ecf4cabbcca739ed19324fdda15d0a363a5676f58cfd33cd5",
+      "fullPath": "presets/4.5/tune/PIDtoolbox_5inch_freestyle.txt",
+      "hash": "40845ea990daf5433e3c180155acf19162f6ba824fedcbdd597b972edaccbb98",
       "title": "PIDtoolbox 5 inch Freestyle Tune",
       "firmware_version": [
         "4.5"
@@ -5914,7 +5914,7 @@
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/4.5/tune/PIDtoolbox/PIDtoolbox_Generic_7-9inch_Cinelifter.txt",
+      "fullPath": "presets/4.5/tune/PIDtoolbox_Generic_7-9inch_Cinelifter.txt",
       "hash": "56e43e538bb310c6170dc3aaa64065dcee90f9f2542dd94e7a2949a2e83b11f4",
       "title": "PIDtoolbox Generic 7-9inch Cinelifter",
       "firmware_version": [

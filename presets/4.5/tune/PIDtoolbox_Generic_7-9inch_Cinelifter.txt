@@ -13,10 +13,13 @@
 #$ INCLUDE: presets/4.5/filters/defaults.txt
 
 set dshot_bidir = ON
+set dshot_idle_value = 700
+set motor_pwm_protocol = DSHOT300
 
 # -- Filter Settings --
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 500
+set dyn_notch_count = 3
 set dyn_notch_q = 500
 set dyn_notch_min_hz = 20
 set dyn_notch_max_hz = 400
@@ -24,6 +27,7 @@ set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 0
 set rpm_filter_harmonics = 3
 set rpm_filter_q = 750
+set rpm_filter_min_hz = 70
 set dterm_lpf1_dyn_min_hz = 0
 set dterm_lpf1_dyn_max_hz = 0
 set dterm_lpf1_type = PT2
@@ -31,6 +35,9 @@ set dterm_lpf1_static_hz = 75
 set dterm_lpf2_static_hz = 0
 
 # -- PID Settings --
+set iterm_relax = RPY
+set iterm_relax_cutoff = 5
+set throttle_boost = 0
 set p_pitch = 61
 set i_pitch = 109
 set d_pitch = 41
@@ -42,16 +49,18 @@ set f_roll = 156
 set p_yaw = 58
 set i_yaw = 104
 set f_yaw = 156
+set angle_level_strength = 20
 set d_min_roll = 39
 set d_min_pitch = 41
 set feedforward_smooth_factor = 18
-set feedforward_boost = 5
-set simplified_master_multiplier = 130
+set feedforward_boost = 8
+set simplified_pids_mode = RP
+set simplified_master_multiplier = 150
+set simplified_i_gain = 55
+set simplified_d_gain = 155
 set simplified_dmax_gain = 0
-set simplified_pitch_d_gain = 95
-set simplified_dterm_filter_multiplier = 160
-set tpa_rate = 75
-set tpa_breakpoint = 1300
+set simplified_feedforward_gain = 75
+set simplified_pitch_d_gain = 90
 
 #$ OPTION_GROUP BEGIN: Select Dshot 300 or 600
     #$ OPTION BEGIN (UNCHECKED): Dshot 300
