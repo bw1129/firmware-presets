@@ -1,0 +1,64 @@
+#$ TITLE: PIDtoolbox Generic 7-9inch Cinelifter
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: TUNE
+#$ STATUS: OFFICIAL
+#$ KEYWORDS: PIDtoolbox, PTB, PTBLABS, lifter, Cinelifter
+#$ AUTHOR: The PIDtoolbox Guy (Brian White)
+#$ DESCRIPTION: PIDtoolbox Generic 7-9inch Cinelifter Tune
+#$ DESCRIPTION: 7"-9" Cinelifter, with Komodo, Sony FX6, BMPCC, or similar payload 3000g-4000g AUW
+#$ DESCRIPTION: 6s, 2808 1350kv (7-8inch), 2812 1100kv (9inch)
+#$ WARNING: Must use hardmounted camera mount with no Quick release, no silicon or alpha gels
+#$ DISCUSSION: https://discord.gg/XdXh5AVU
+#$ INCLUDE: presets/4.5/tune/defaults.txt
+#$ INCLUDE: presets/4.5/filters/defaults.txt
+
+set dshot_bidir = ON
+
+# -- Filter Settings --
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 500
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 20
+set dyn_notch_max_hz = 400
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set rpm_filter_harmonics = 3
+set rpm_filter_q = 750
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 0
+set dterm_lpf1_type = PT2
+set dterm_lpf1_static_hz = 75
+set dterm_lpf2_static_hz = 0
+
+# -- PID Settings --
+set p_pitch = 61
+set i_pitch = 109
+set d_pitch = 41
+set f_pitch = 162
+set p_roll = 58
+set i_roll = 104
+set d_roll = 39
+set f_roll = 156
+set p_yaw = 58
+set i_yaw = 104
+set f_yaw = 156
+set d_min_roll = 39
+set d_min_pitch = 41
+set feedforward_smooth_factor = 18
+set feedforward_boost = 5
+set simplified_master_multiplier = 130
+set simplified_dmax_gain = 0
+set simplified_pitch_d_gain = 95
+set simplified_dterm_filter_multiplier = 160
+set tpa_rate = 75
+set tpa_breakpoint = 1300
+
+#$ OPTION_GROUP BEGIN: Select Dshot 300 or 600
+    #$ OPTION BEGIN (UNCHECKED): Dshot 300
+        set motor_pwm_protocol = DSHOT300
+    #$ OPTION END
+
+    #$ OPTION BEGIN (UNCHECKED): Dshot 600
+        set motor_pwm_protocol = DSHOT600
+    #$ OPTION END
+#$ OPTION_GROUP END

@@ -5894,7 +5894,7 @@
       "priority": 1000000000000
     },
     {
-      "fullPath": "presets/4.5/tune/PIDtoolbox_5inch_freestyle.txt",
+      "fullPath": "presets/4.5/tune/PIDtoolbox/PIDtoolbox_5inch_freestyle.txt",
       "hash": "e1c1f91f470c44ed6bb9c35d4ad48c582abc4399becd03a810904cc4a55949af",
       "title": "PIDtoolbox 5 inch Freestyle Tune",
       "firmware_version": [
