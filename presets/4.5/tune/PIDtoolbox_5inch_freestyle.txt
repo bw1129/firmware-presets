@@ -1,13 +1,13 @@
-#$ TITLE: PIDtoolbox Official 5 inch Freestyle Tune
+#$ TITLE: PIDtoolbox 5 inch Freestyle Tune
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: PIDtoolbox, PTB, PTBLABS, 5"
-#$ AUTHOR: The PIDtoolbox Guy
+#$ KEYWORDS: PIDtoolbox, PTB, PTBLABS, 5", freestyle
+#$ AUTHOR: The PIDtoolbox Guy (Brian White)
 
 #$ DESCRIPTION: PIDtoolbox Official Generic 5 inch Freestyle Tune 
-#$ DESCRIPTION: ESC must be bi-directional Dshot ready
-#$ WARNING: For use only with a 5" freestyle build, 1700-1950kv (6s) or 2400-2700kv (4s)
+#$ DESCRIPTION: 1700-1950kv (6s) or 2400-2700kv (4s), 650-750g AUW
+#$ WARNING: For use only with a 5" freestyle build, 
 #$ DISCUSSION: https://discord.gg/XdXh5AVU
 #$ INCLUDE: presets/4.5/tune/defaults.txt
 #$ INCLUDE: presets/4.5/filters/defaults.txt
