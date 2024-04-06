@@ -376,6 +376,7 @@
       "LeadFingers",
       "League",
       "leds",
+      "lifter",
       "Limon",
       "link",
       "Llama",
@@ -5895,19 +5896,38 @@
     },
     {
       "fullPath": "presets/4.5/tune/PIDtoolbox/PIDtoolbox_5inch_freestyle.txt",
-      "hash": "e1c1f91f470c44ed6bb9c35d4ad48c582abc4399becd03a810904cc4a55949af",
+      "hash": "3eb93dd7195ef10ecf4cabbcca739ed19324fdda15d0a363a5676f58cfd33cd5",
       "title": "PIDtoolbox 5 inch Freestyle Tune",
       "firmware_version": [
         "4.5"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "OFFICIAL",
       "keywords": [
         "PIDtoolbox",
         "PTB",
         "PTBLABS",
         "5\"",
         "freestyle"
+      ],
+      "author": "The PIDtoolbox Guy (Brian White)",
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.5/tune/PIDtoolbox/PIDtoolbox_Generic_7-9inch_Cinelifter.txt",
+      "hash": "56e43e538bb310c6170dc3aaa64065dcee90f9f2542dd94e7a2949a2e83b11f4",
+      "title": "PIDtoolbox Generic 7-9inch Cinelifter",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "TUNE",
+      "status": "OFFICIAL",
+      "keywords": [
+        "PIDtoolbox",
+        "PTB",
+        "PTBLABS",
+        "lifter",
+        "Cinelifter"
       ],
       "author": "The PIDtoolbox Guy (Brian White)",
       "priority": 1000000000000

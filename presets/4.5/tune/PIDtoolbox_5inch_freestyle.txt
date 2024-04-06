@@ -4,7 +4,6 @@
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: PIDtoolbox, PTB, PTBLABS, 5", freestyle
 #$ AUTHOR: The PIDtoolbox Guy (Brian White)
-
 #$ DESCRIPTION: PIDtoolbox Official Generic 5 inch Freestyle Tune
 #$ DESCRIPTION: 5" freestyle build with GoPro and top mounted battery, 650-750g AUW
 #$ DESCRIPTION: 1700-1950kv (6s) or 2400-2700kv (4s)
